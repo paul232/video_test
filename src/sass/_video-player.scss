@@ -1,0 +1,48 @@
+
+.player__container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 800px;
+	height: 600px;
+	position: relative;
+
+	&__video {
+		width: 800px;
+		height: 600px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		
+		video {
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	&__rect {
+		z-index: 9;
+		height: 60px;
+		width: 140px;
+		background: #de2525;
+		position: absolute;
+		top: 100%;
+		transform: translate(100%, -100%);
+		right: 100%; 
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-radius: 2px;
+		cursor: pointer;
+		transition: .25s ease;
+
+		&.moves {
+			animation: bottomLeftTopRightBounceWithScale 6s linear forwards;
+		}
+
+		span {
+			color: #fff;
+		}
+	}
+}
