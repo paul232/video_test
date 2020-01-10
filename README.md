@@ -1,7 +1,7 @@
 TL;DR
 
 ****
-npm i
+npm install
 
 npm start
 ****
